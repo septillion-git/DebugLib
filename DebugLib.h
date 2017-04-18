@@ -7,11 +7,15 @@
 #endif
 
 #if defined(DEBUG_SKETCH)
-  #define DBEGIN(...)   DEBUG_SKETCH.begin(__VA_ARGS__)
-  #define DPRINT(...)   DEBUG_SKETCH.print(__VA_ARGS__)
-  #define DPRINTLN(...) DEBUG_SKETCH.println(__VA_ARGS__)
+  #define DBEGIN(...)       DEBUG_SKETCH.begin(__VA_ARGS__)
+  #define DPRINT(...)       DEBUG_SKETCH.print(__VA_ARGS__)
+  #define DPRINTLN(...)     DEBUG_SKETCH.println(__VA_ARGS__)
+  #define DPRINTF(x,...)    DEBUG_SKETCH.print(F(x),##__VA_ARGS__)
+  #define DPRINTFLN(x,...)  DEBUG_SKETCH.println(F(x),##__VA_ARGS__)
 #else
   #define DBEGIN(...)
   #define DPRINT(...)
   #define DPRINTLN(...)
+  #define DPRINTF(x,...)
+  #define DPRINTFLN(x,...)
 #endif
