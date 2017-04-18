@@ -7,9 +7,11 @@
 #endif
 
 #if defined(DEBUG_SKETCH)
+  #define DBEGIN(...)   DEBUG_SKETCH.begin(__VA_ARGS__)
   #define DPRINT(...)   DEBUG_SKETCH.print(__VA_ARGS__)
   #define DPRINTLN(...) DEBUG_SKETCH.println(__VA_ARGS__)
 #else
+  #define DBEGIN(...)
   #define DPRINT(...)
   #define DPRINTLN(...)
 #endif
