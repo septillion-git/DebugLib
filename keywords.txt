@@ -11,11 +11,11 @@
 # Methods and Functions (KEYWORD2)
 #######################################
 
-DBEGIN	 KEYWORD2
-DPRINT	 KEYWORD2
-DPRINTLN	 KEYWORD2
-DPRINTF	 KEYWORD2
-DPRINTFLN	 KEYWORD2
+DBEGIN	KEYWORD2
+DPRINT	KEYWORD2
+DPRINTLN	KEYWORD2
+DPRINTF	KEYWORD2
+DPRINTFLN	KEYWORD2
 
 
 #######################################
@@ -26,4 +26,4 @@ DPRINTFLN	 KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
-DEBUG_SKETCH  LITERAL1
+DEBUG_SKETCH	LITERAL1
